@@ -1,0 +1,42 @@
+<?php
+$z[0]=Array("type","\r\n            <h2 class=\"dark-title\"><a href=\"[field:typelink/]\">[field:typename/]</a></h2>\r\n            ",214,353);
+$z[0][4]=array();
+$z[0][4]['typeid']="9";
+$z[1]=Array("sql"," \r\n                [field:content  function='cn_substr(html2text(@me),400)'/]...\r\n                ",449,618);
+$z[1][4]=array();
+$z[1][4]['sql']="Select content from dede_arctype where id=9";
+$z[2]=Array("type"," <a href=\"[field:typelink/]\">查看更多 <i class=\"fa fa-arrow-right\"></i></a>",683,796);
+$z[2][4]=array();
+$z[2][4]['typeid']="9";
+$z[3]=Array("channel","\r\n              <li><a href=\"[field:typeurl/]\"><i class=\"fa fa-caret-right\"></i>  [field:typename/]</a></li>\r\n              ",1196,1361);
+$z[3][4]=array();
+$z[3][4]['type']="top";
+$z[4]=Array("type","\r\n            <h2 class=\"dark-title\"><a href=\"[field:typelink/]\">[field:typename/]</a></h2>\r\n            ",1582,1722);
+$z[4][4]=array();
+$z[4][4]['typeid']="17";
+$z[5]=Array("global","",1862,1884);
+$z[5][4]=array();
+$z[5][4]['name']="cfg_adr";
+$z[6]=Array("global","",1947,1969);
+$z[6][4]=array();
+$z[6][4]['name']="cfg_tel";
+$z[7]=Array("global","",2037,2061);
+$z[7][4]=array();
+$z[7][4]['name']="cfg_email";
+$z[8]=Array("global","",2125,2149);
+$z[8][4]=array();
+$z[8][4]['name']="cfg_phone";
+$z[9]=Array("global","",2212,2234);
+$z[9][4]=array();
+$z[9][4]['name']="cfg_fax";
+$z[10]=Array("global","",2296,2323);
+$z[10][4]=array();
+$z[10][4]['name']="cfg_basehost";
+$z[11]=Array("global","",2940,2966);
+$z[11][4]=array();
+$z[11][4]['name']="cfg_powerby";
+$z[12]=Array("channelartlist","\r\n          <li {dede:field name=typeid runphp=\"yes\"}\r\nglobal \$dsql;\r\n\$sql = \"SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 \";\r\n\$row = \$dsql->GetOne(\$sql);      \r\n            @me=is_array(\$row)?'class=\"Lev1 menu-item-has-children\"':'';\r\n            {/dede:field} href=\"{dede:field name='typeurl'/}\" class=\"Lev1\"> <a href=\"{dede:field name='typeurl'/}\" class=\"menu1\">{dede:field name='typename'/} \r\n            {dede:field name=typeid runphp=\"yes\"}\r\n            global \$dsql;\r\n            \$sql = \"SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 \";\r\n            \$row = \$dsql->GetOne(\$sql);      \r\n            @me=is_array(\$row)?'<i class=\"fa fa-caret-down\"></i>':'';\r\n            {/dede:field} </a>\r\n            <ul class=\"sub-menu dr-menu2\">\r\n              {dede:channel type='son' noself='yes'}\r\n              <li class=\"Lev2\"> <a href=\"[field:typeurl/]\" class=\"menu2\">[field:typename/]</a> </li>\r\n              {/dede:channel}\r\n            </ul>\r\n          </li>\r\n          ",3678,4811);
+$z[12][4]=array();
+$z[12][4]['typeid']="top";
+
+?>

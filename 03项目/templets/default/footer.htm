@@ -1,0 +1,116 @@
+<footer class="footer" id="footer-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 foot-about">
+        <div class="footer-widget">
+          <div class="educa-info"> {dede:type typeid='9'}
+            <h2 class="dark-title"><a href="[field:typelink/]">[field:typename/]</a></h2>
+            {/dede:type}
+            <div class="line-dec"></div>
+            <div class="fabout">
+              <p> {dede:sql sql='Select content from dede_arctype where id=9'} 
+                [field:content  function='cn_substr(html2text(@me),400)'/]...
+                {/dede:sql} </p>
+            </div>
+            <div class="text-button"> {dede:type typeid='9'} <a href="[field:typelink/]">查看更多 <i class="fa fa-arrow-right"></i></a>{/dede:type} </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 hidden-sm hidden-xs foot-nav">
+        <div class="footer-widget">
+          <div class="featured-links">
+            <h2>快速链接</h2>
+            <div class="line-dec"></div>
+            <ul>
+              <li><a href="/"><i class="fa fa-caret-right"></i>  网站首页</a></li>
+              {dede:channel type='top'}
+              <li><a href="[field:typeurl/]"><i class="fa fa-caret-right"></i>  [field:typename/]</a></li>
+              {/dede:channel}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 hidden-sm hidden-xs foot-contact">
+        <div class="footer-widget">
+          <div class="university-address"> {dede:type typeid='17'}
+            <h2 class="dark-title"><a href="[field:typelink/]">[field:typename/]</a></h2>
+            {/dede:type}
+            <div class="line-dec"></div>
+            <ul class="f-contact">
+              <li> <i class="fa fa-map-marker"></i>地址：{dede:global.cfg_adr/} </li>
+              <li> <i class="fa fa-phone"></i>电话：{dede:global.cfg_tel/} </li>
+              <li> <i class="fa fa-envelope-o"></i>邮箱：{dede:global.cfg_email/} </li>
+              <li> <i class="fa fa-mobile"></i>手机：{dede:global.cfg_phone/} </li>
+              <li> <i class="fa fa-truck"></i>传真：{dede:global.cfg_fax/} </li>
+              <li> <i class="fa fa-home"></i>网址：{dede:global.cfg_basehost/} </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 hidden-sm hidden-xs foot-qrcode">
+        <div class="footer-widget">
+          <h2>扫描二维码</h2>
+          <div class="line-dec"></div>
+          <div class="f-qrcode"><img src="/skin/images/qrcode.png"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-sm-12 cr-left" style="width:100%;text-align:center;">
+          <div class="copyright-text">
+            <p> {dede:global.cfg_powerby/} </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 hidden-sm hidden-xs cr-right" style="z-index:100;display:none;">
+          <div class="menu">
+            <ul>
+              <li><a href="http://www.biyefudao.com/" target="_blank">技术支持：双子科技</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+</div>
+</div>
+<nav class="sidebar-menu slide-from-left">
+  <div class="nano">
+    <div class="content">
+      <nav class="responsive-menu">
+        <ul>
+          <li class="Lev1"> <a href="/" class="menu1">网站首页 </a></li>
+          {dede:channelartlist typeid='top'}
+          <li {dede:field name=typeid runphp="yes"}
+global $dsql;
+$sql = "SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+$row = $dsql->GetOne($sql);      
+            @me=is_array($row)?'class="Lev1 menu-item-has-children"':'';
+            {/dede:field} href="{dede:field name='typeurl'/}" class="Lev1"> <a href="{dede:field name='typeurl'/}" class="menu1">{dede:field name='typename'/} 
+            {dede:field name=typeid runphp="yes"}
+            global $dsql;
+            $sql = "SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+            $row = $dsql->GetOne($sql);      
+            @me=is_array($row)?'<i class="fa fa-caret-down"></i>':'';
+            {/dede:field} </a>
+            <ul class="sub-menu dr-menu2">
+              {dede:channel type='son' noself='yes'}
+              <li class="Lev2"> <a href="[field:typeurl/]" class="menu2">[field:typename/]</a> </li>
+              {/dede:channel}
+            </ul>
+          </li>
+          {/dede:channelartlist}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</nav>
+</div>
+<script type="text/javascript" src="/skin/js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.themepunch.revolution.min.js"></script> 
+<script type="text/javascript" src="/skin/js/plugins.js"></script> 
+<script type="text/javascript" src="/skin/js/custom.js"></script>

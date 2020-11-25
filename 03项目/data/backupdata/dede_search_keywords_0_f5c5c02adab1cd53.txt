@@ -1,0 +1,4 @@
+INSERT INTO `dede_search_keywords` VALUES('1','工作','工作','1','0','1562221998','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','关于','关于','2','0','1562222041','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','  北京东成伟业信息咨询',' 北京东成伟业信息咨询 京东 伟业 信息 咨询','1','0','1562222023','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','关于我们','关于我们 关于 我们','1','0','1562222050','0','0');

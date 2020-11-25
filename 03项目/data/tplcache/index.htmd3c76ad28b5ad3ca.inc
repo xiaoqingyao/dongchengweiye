@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("global","",347,373);
+$z[0][4]=array();
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",417,447);
+$z[1][4]=array();
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",484,511);
+$z[2][4]=array();
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("include","",3278,3313);
+$z[3][4]=array();
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("arclist","\r\n        <li class=\"first-slide\" data-transition=\"fade\" data-slotamount=\"10\" data-masterspeed=\"300\" > <img src=\"[field:picname/]\" data-fullwidthcentering=\"on\" alt=\"[field:title/]\"/>\r\n          <div class=\"tp-caption first-line lft tp-resizeme start\" data-x=\"center\" data-hoffset=\"0\" data-y=\"190\" data-speed=\"1000\" data-start=\"200\" data-easing=\"Power4.easeOut\" data-splitin=\"none\" data-splitout=\"none\" data-elementdelay=\"0\" data-endelementdelay=\"0\">\r\n            <div class=\"slide-caption\"> <a href=\"#1\"><i class=\"fa fa-info-circle\"></i></a> <a href=\"#[field:global name=autoindex runphp=\"yes\"]@me=@me+1;[/field:global]\"><span>[field:shorttitle/]</span></a>\r\n              <h2>[field:title/]</h2>\r\n              <p>[field:description/]</p>\r\n            </div>\r\n          </div>\r\n        </li>\r\n        ",3455,4330);
+$z[4][4]=array();
+$z[4][4]['typeid']="20";
+$z[4][4]['titlelen']="50";
+$z[4][4]['orderby']="pubdate";
+$z[5]=Array("type","\r\n            <div class=\"section-heading\">\r\n              <h1>[field:typename/]</h1>\r\n              <span>[field:description/]</span> </div>\r\n            ",4613,4803);
+$z[5][4]=array();
+$z[5][4]['typeid']="35";
+$z[6]=Array("type","\r\n                <div class=\"service-item\"> <i class=\"fa fa-graduation-cap\"></i>\r\n                  <h4>[field:typename/]</h4>\r\n                  <p>[field:description/]</p>\r\n                </div>\r\n                ",4908,5159);
+$z[6][4]=array();
+$z[6][4]['typeid']="36";
+$z[7]=Array("type","\r\n                <div class=\"service-item\"> <i class=\"fa fa-globe\"></i>\r\n                  <h4>[field:typename/]</h4>\r\n                  <p>[field:description/]</p>\r\n                </div>\r\n                ",5232,5474);
+$z[7][4]=array();
+$z[7][4]['typeid']="37";
+$z[8]=Array("type","\r\n                <div class=\"service-item\"> <i class=\"fa fa-clock-o\"></i>\r\n                  <h4>[field:typename/]</h4>\r\n                  <p>[field:description/]</p>\r\n                </div>\r\n                ",5606,5850);
+$z[8][4]=array();
+$z[8][4]['typeid']="38";
+$z[9]=Array("type","\r\n                <div class=\"service-item\"> <i class=\"fa fa-book\"></i>\r\n                  <h4>[field:typename/]</h4>\r\n                  <p>[field:description/]</p>\r\n                </div>\r\n                ",5923,6164);
+$z[9][4]=array();
+$z[9][4]['typeid']="39";
+$z[10]=Array("channelartlist","\r\n<section class=\"section-pad popular-courses\" id=\"index-portfolio\">\r\n  <div class=\"container\">\r\n    <div class=\"section-heading text-center\">\r\n      <h1><a href=\"{dede:field name='typeurl'/}\">{dede:field name='typename'/}</a></h1>\r\n      <p>{dede:field name='description'/}</p>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div id=\"owl-courses-second\"> {dede:arclist row='12' titlelen='50' orderby='pubdate'}\r\n        <div class=\"item course-item\"> <a href=\"[field:arcurl/]\"><img src=\"[field:picname/]\" alt=\"[field:title/]\"/></a>\r\n          <div class=\"down-content\">\r\n            <div class=\"price-red\"> <span>Gold</span>\r\n              <div class=\"base\"></div>\r\n            </div>\r\n            <h4 class=\"iport-title\"><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></h4>\r\n            <p class=\"desc\">[field:description function=\"cn_substr(@me,200)\"/]...</p>\r\n            <div class=\"text-button\"> <a href=\"[field:arcurl/]\">查看更多<i class=\"fa fa-arrow-right\"></i></a> </div>\r\n          </div>\r\n        </div>\r\n        {/dede:arclist} </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n",6275,7432);
+$z[10][4]=array();
+$z[10][4]['typeid']="1,1";
+$z[11]=Array("channelartlist","\r\n<section class=\"section-pad read-books books-read\" id=\"index-case\">\r\n  <div class=\"container\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\">\r\n        <div class=\"section-heading text-center\">\r\n          <h1><a href=\"{dede:field name='typeurl'/}\">{dede:field name='typename'/}</a></h1>\r\n          <p>{dede:field name='description'/}</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\"> {dede:arclist row='4' titlelen='50' orderby='pubdate'}\r\n      <div class=\"col-md-3 col-sm-6 col-xs-6 case-item\">\r\n        <div class=\"books-item\">\r\n          <p class=\"thumb-link\"><a href=\"[field:arcurl/]\"><img alt=\"[field:title/]\" src=\"[field:picname/]\"/></a></p>\r\n          <h4><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></h4>\r\n        </div>\r\n      </div>\r\n      {/dede:arclist} </div>\r\n  </div>\r\n</section>\r\n",7464,8367);
+$z[11][4]=array();
+$z[11][4]['typeid']="5,5";
+$z[12]=Array("channelartlist","\r\n<section class=\"section-pad university-news\" id=\"index-news\">\r\n  <div class=\"container\">\r\n    <div class=\"row\">\r\n      <div class=\"section-heading text-center\">\r\n        <h1><a href=\"{dede:field name='typeurl'/}\">{dede:field name='typename'/}</a></h1>\r\n        <p>{dede:field name='description'/}</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\"> {dede:arclist row='4' titlelen='50' orderby='pubdate'}\r\n      <div class=\"col-md-6 col-sm-6 col-xs-6 inews-item\">\r\n        <div class=\"news-item\">\r\n          <div class=\"thumb-holder\"> <a href=\"[field:arcurl/]\"><img src=\"[field:picname/]\" alt=\"[field:title/]\"/></a>\r\n            <div class=\"hover-content\"><a href=\"[field:arcurl/]\"><i class=\"fa fa-eye\"></i></a></div>\r\n          </div>\r\n          <div class=\"right-content\">\r\n            <ul>\r\n              <li class=\"inews-date\"><i class=\"fa fa-calendar\"></i> [field:pubdate function=\"MyDate('Y-m-d',@me)\"/]</li>\r\n              <li class=\"inews-user\"><i class=\"fa fa-user\"></i> by [field:writer/]</li>\r\n            </ul>\r\n            <h4 class=\"inews-title\"><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></h4>\r\n            <div class=\"line-dec\"></div>\r\n            <p class=\"desc\">[field:description function=\"cn_substr(@me,200)\"/]...</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      {/dede:arclist} </div>\r\n  </div>\r\n</section>\r\n",8383,9806);
+$z[12][4]=array();
+$z[12][4]['typeid']="16,16";
+$z[13]=Array("include","",9808,9845);
+$z[13][4]=array();
+$z[13][4]['filename']="footer.htm";
+
+?>

@@ -1,0 +1,63 @@
+<header class="site-header">
+  <div id="main-header" class="main-header header-sticky">
+    <div class="inner-header container clearfix">
+      <div class="logo"><a href="/"><img src="/skin/images/logo.png" alt="{dede:global.cfg_webname/}"/></a></div>
+      <div class="header-right-toggle pull-right hidden-md hidden-lg"> <a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a> </div>
+      <div class="header-info hidden-sm hidden-xs">
+        <ul>
+          <li class="nav-phone"><i class="fa fa-phone"></i>{dede:global.cfg_tel/}</li>
+          <li class="nav-email"><i class="fa fa-envelope-o"></i>{dede:global.cfg_email/}</li>
+          <!--<li class="language">
+                  <p class="lang-title"> <a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;"> <i class="fa fa-globe"></i>中文版<i class="fa fa-angle-down"></i></a> </p>
+                  <div id="example" class="more">
+                    <p class="lang-title2"> <a href="#" id="example-hide" class="hideLink" onclick="showHide('example');return false;"> <i class="fa fa-globe"></i>中文版<i class="fa fa-angle-up"></i></a> </p>
+                    <form method="get" id="blog-search" class="blog-search">
+                      <ul>
+                        <li><a href="/">中文版</a></li>
+                        <li><a href="/en">English</a></li>
+                      </ul>
+                    </form>
+                  </div>
+                </li>-->
+          <li class="nav-social"><a href="{dede:global.cfg_weibo/}"><i class="fa fa-weibo"></i> 官方微博</a></li>
+        </ul>
+      </div>
+      <nav class="main-navigation text-left hidden-xs hidden-sm" id="navigation">
+        <ul>
+          <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='Lev1 active' ":@me="";{/dede:field}> <a href="/" class="menu1 has-submenu">网站首页</a></li>
+          {dede:channelartlist typeid='top' currentstyle='active'}
+          <li class="Lev1 {dede:field.currentstyle/}"> <a href="{dede:field name='typeurl'/}" class="menu1 has-submenu">{dede:field name='typename'/} 
+            {dede:field name=typeid runphp="yes"}
+            global $dsql;
+            $sql = "SELECT id From `dede_arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+            $row = $dsql->GetOne($sql);      
+            @me=is_array($row)?'<i class="fa fa-angle-down"></i>':'';
+            {/dede:field}</a>
+            <ul {dede:field name=typeid runphp="yes"}
+global $dsql;
+$sql = "SELECT id From `#@__arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+$row = $dsql->
+              GetOne($sql);
+              @me=is_array($row)?'class="sub-menu dr-menu2"':'style="display:none"';
+              {/dede:field}> 
+              
+              {dede:channel type='son' noself='yes'}
+              <li class="Lev2"> <a href="[field:typeurl/]" class="menu21">[field:typename/]</a> </li>
+              {/dede:channel}
+            </ul>
+          </li>
+          {/dede:channelartlist}
+          <li class="nav-search"><a href="#search"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div id="search">
+  <button type="button" class="close">×</button>
+  <form  class="t-search-form" name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+    <input type="hidden" name="kwtype" value="0" />
+    <input type="search" value="" name="q" class="search-input" placeholder="输入关键字" />
+    <button type="submit" class="btn btn-primary"><span>搜索</span></button>
+  </form>
+</div>

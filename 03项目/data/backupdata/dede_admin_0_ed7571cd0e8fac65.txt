@@ -1,0 +1,2 @@
+INSERT INTO `dede_admin` VALUES('1','10','admin','588a79bdf27b2f679f7c','东成伟业','东成伟业','jiuzhoujy.com','','1562572381','61.50.109.18');
+INSERT INTO `dede_admin` VALUES('2','10','admin888','588a79bdf27b2f679f7c','东成伟业','东成伟业','jiuzhoujy.com','','1562162355','221.216.124.226');
